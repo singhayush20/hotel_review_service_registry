@@ -1,0 +1,12 @@
+server:
+    port: 8761
+eureka:
+    instance:
+        hostname: localhost
+    client:
+        register-with-eureka: false #this will ensure that this service
+                                    #is not itself registered as a client
+        fetch-registry: false #this ensures that this service does not fetch the registry
+    # server:
+        # renewalPercentThreshold: 0.85
+        # enableSelfPreservation: false
